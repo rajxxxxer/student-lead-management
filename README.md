@@ -1,50 +1,132 @@
-# Welcome to your Expo app 👋
+📱 Student Lead Management App (Mini CRM)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple React Native (Expo) application built as part of the Ative Internship screening assignment.
+The app allows users to manage student leads with basic CRUD operations and local data persistence.
 
-## Get started
+🚀 Features Implemented
 
-1. Install dependencies
+➕ Add student leads using a form
 
-   ```bash
-   npm install
-   ```
+📋 View list of all leads (FlatList)
 
-2. Start the app
+🔍 View lead details
 
-   ```bash
-   npx expo start
-   ```
+🗑️ Delete a lead
 
-In the output, you'll find options to open the app in a
+🧭 Navigation between screens using React Navigation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+✅ Basic form validation (name, phone, email)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+💾 Persistent storage using AsyncStorage
 
-## Get a fresh project
+🔔 Toast notifications for user feedback
 
-When you're ready, run:
+🛠️ Tech Stack
 
-```bash
-npm run reset-project
-```
+React Native (Expo)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+React Hooks
 
-## Learn more
+React Navigation (Stack Navigator)
 
-To learn more about developing your project with Expo, look at the following resources:
+AsyncStorage
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+react-native-toast-message
 
-## Join the community
+📂 Folder Structure
+student-crm/
+│
+├── App.js
+├── index.js
+├── app.json
+├── package.json
+├── README.md
+│
+├── src/
+│   ├── context/
+│   │   └── LeadContext.js
+│   │
+│   ├── navigation/
+│   │   └── StackNavigator.js
+│   │
+│   └── screens/
+│       ├── HomeScreen.js
+│       ├── AddLeadScreen.js
+│       └── LeadDetailScreen.js
+│
+└── assets/
 
-Join our community of developers creating universal apps.
+🧭 Screens Overview
+🏠 Home Screen
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Displays all leads using FlatList
+
+Navigate to Add Lead screen
+
+Tap a lead to view details
+
+➕ Add Lead Screen
+
+Form with validations:
+
+Name (required, alphabets only)
+
+Phone (required, 10 digits)
+
+Email (optional, valid format)
+
+Toast messages for success/error
+
+📄 Lead Detail Screen
+
+View full lead information
+
+Delete lead functionality
+
+▶️ Setup Instructions
+
+Clone the repository
+
+git clone <your-github-repo-link>
+
+
+Navigate to the project directory
+
+cd student-crm
+
+
+Install dependencies
+
+npm install
+
+
+Start the app
+
+npx expo start
+
+
+Run on:
+
+Android Emulator
+
+Physical device using Expo Go
+
+🎥 Demo (Screen Recording)
+
+A short screen recording demonstrating all major features of the app:
+
+🔗 Demo Video:
+https://share.zight.com/8Luz0e1O
+
+📝 Notes
+
+Data is stored locally using AsyncStorage (persists even after app restart)
+
+Focus was kept on clean code, functionality, and usability
+
+UI kept simple as per assignment instructions
+
+👤 Author
+
+Abhishek Raj
+React Native / MERN Stack Developer
